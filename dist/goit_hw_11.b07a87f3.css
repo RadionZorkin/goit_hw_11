@@ -1,0 +1,215 @@
+/*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+html {
+  tab-size: 4;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+}
+
+hr {
+  height: 0;
+  color: inherit;
+}
+
+abbr[title] {
+  text-decoration: underline dotted;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp, pre {
+  font-family: ui-monospace, SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted buttontext;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button {
+  height: auto;
+}
+
+::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+summary {
+  display: list-item;
+}
+
+body {
+  background-color: #f8f9fa;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.search-form {
+  background-color: #007bff;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  display: flex;
+}
+
+.search-form input[type="text"] {
+  border: none;
+  border-radius: 5px;
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.search-form button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #0062cc;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.search-form button:hover {
+  background-color: #3395ff;
+}
+
+.gallery {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  display: grid;
+}
+
+.gallery .photo-card {
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform .3s, box-shadow .3s;
+  overflow: hidden;
+  box-shadow: 0 4px 6px #0000001a;
+}
+
+.gallery .photo-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px #0003;
+}
+
+.gallery .photo-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.gallery .photo-card .info {
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+}
+
+.gallery .photo-card .info p {
+  margin: 0;
+}
+
+.load-more {
+  color: #fff;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  display: flex;
+}
+
+.load-more:hover {
+  background-color: #3395ff;
+}
+
+.hidden {
+  display: none;
+}
+/*# sourceMappingURL=goit_hw_11.b07a87f3.css.map */

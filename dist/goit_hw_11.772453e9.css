@@ -1,0 +1,34 @@
+.image-wrapper {
+  background-color: #f0f0f0;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%) 0 0 / 200% 100%;
+  width: 100%;
+  height: 100%;
+  animation: 1.5s infinite skeleton-loading;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.hidden-image {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+/*# sourceMappingURL=goit_hw_11.772453e9.css.map */
