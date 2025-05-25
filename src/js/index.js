@@ -46,9 +46,21 @@ function getInput(evt) {
 }
 
 function makeCard(hits) {
-  const cardTemplate = Handlebars.compile(rawTemplate); // Компіляція шаблону
-  const markup = cardTemplate(hits); // Генерація HTML
-  refs.gallery.insertAdjacentHTML('beforeend', markup); // Вставка в DOM
+  const cardTemplate = Handlebars.compile(rawTemplate);
+  const markup = cardTemplate(hits);
+  refs.gallery.insertAdjacentHTML('beforeend', markup);
+
+  const images = document.querySelectorAll('.gallery .hidden-image');
+  images.forEach(img => {
+    img.addEventListener('load', () => {
+      const skeleton = img.closest('.image-wrapper').querySelector('.skeleton');
+      skeleton.style.display = 'none'; // Ховаємо скелетон
+      img.style.display = 'block'; // Відображаємо зображення
+    });
+  });
+
+  // Оновлення SimpleLightbox після створення карток
+  lightbox.refresh();
 }
 
 function showButtonLoadMore() {
